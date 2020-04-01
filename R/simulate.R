@@ -5,14 +5,6 @@ simulate <- function(susceptible_origin, infected_origin, recovered_origin,
                      mean_recovery, doubling_time, day_total,
                      date_origin = as.Date("2020-03-15")) {
   
-  susceptible_origin <- 3599733.333
-  infected_origin <- 266.6666667
-  recovered_origin <- 0
-  mean_recovery <- 14
-  doubling_time <- 7
-  day_total <- 100
-  date_origin = as.Date("2020-03-15")
-  
   gamma <- get_gamma(mean_recovery)
   beta <- get_beta(doubling_time, gamma, susceptible_origin)
   
