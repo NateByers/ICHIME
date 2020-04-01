@@ -10,12 +10,12 @@ get_beta <- function(Td = c(7:10), # 7 to 10 days, doubling time
   # susceptible_origin = 3599733.333
   
   # should be this
-  # (gamma + (2^(1/Td[1])) - 1)/susceptible_origin
+  (gamma + (2^(1/Td[1])) - 1)/susceptible_origin
 
   # but it doesn't work
   # reverse engineered this number from the Penn output
   
-  7.240416e-08
+  #7.240416e-08
 }
 
 get_R0 <- function(beta, gamma) {
